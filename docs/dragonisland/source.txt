@@ -1,0 +1,62 @@
+"Dragon Island" by Elinor Rausch
+
+Include Rideable Vehicles by Graham Nelson.
+
+Release along with the source text, an introductory postcard, and an interpreter.
+Index map with room-size set to 36.
+
+When play begins:
+	now the right hand status line is "[time of day]";
+	now the left hand status line is "[location] exits:[exit list]".
+	
+To say exit list:
+	let place be location;
+	repeat with way running through directions:
+		let place be the room way from the location;
+		if place is a room, say " '[way]'".
+
+The Enchanted Forest is a room. "The forest here has a path of fluffy clouds leading toward a dome with trapdoors. They lead to big staircases underneath the giant doors."
+
+Sky Dragon City is north of the Enchanted Forest. "There is a city above the sky that is clung to soft clouds. At the city, the priest of the sky calls down their mighty dragon to protect the city from sunfire falcons."
+
+The Plasma Dragon is a rideable animal in Sky Dragon City.
+Instead of mounting the Plasma Dragon, say "I can't mount it yet, it doesn't trust me. I must find a way to ride it."
+
+The Moon Gryphon is a rideable animal in the Enchanted Forest.
+Instead of mounting the Moon Gryphon, say "The Gryphon is powerless for flight, which means I have to wait until nightfall." 
+
+Instead of sleeping:
+	now the time of day is 12:30 PM;
+	say "You fall asleep and wake up hours later."
+
+The Wingheart Hospital is east of Sky Dragon City. "This hospital brings care to dragon hatchlings and citizens of the city for all who come there."
+The nurse is a woman in Wingheart Hospital. "The nurse grants you a warm welcome at a round desk."
+After asking the nurse about "Dragon eggs", say "She says that they are only laid by the dragon gods every million years." 
+After asking the nurse about "Care", say "She smiles and says the room will be ready for your mount." 
+
+The Dragon Stable is southeast of Sky Dragon City. "Here, they hold more and more Plasma Dragons to fly on to get place-to-place. Each Plasma Dragon has different markings, depending on the time they hatched!"
+The dragonmaster is a man in Dragon Stable.
+After asking the dragonmaster about "Flight to Waterway Town", say "He says the Waterway Town Transport is already in launch right now."
+
+The Dragon-God museum is north of Sky Dragon City. "The museum here at Sky Dragon City shows the history of the mighty Dragon Gods that created this world and the life with it." 
+
+Seawing City is west of the Enchanted Forest. "The city here is full of dragon wonders, especially of their great god the Seawing! The Queen of the Wyverns came here long ago to find all the Dragon Gods to present the Wyverns with cargo of helpful items the gods had needed to create."
+
+Wyvern Stable is north of Seawing City. "The Wyverns can travel through the ocean to an island very fast on a waterway, so you might as well take a ride on them!"
+The launcher is a man in Wyvern Stable.
+After asking the launcher about "Launch to Waterway Town", say "He smiles and says that the Seawings will be ready in a bit."
+
+The Ocean Wyvern is a rideable animal in Wyvern Stable.
+
+Waterway Town is north of Wyvern Stable. "Waterway Town has massive boats and canoes travelling across the walkways filled with freshwater. The citizens here have a job to refill the walkways with water for the boats to travel the cargo it holds to Sky Dragon City every week."
+
+Test Islands with "w /n /n /dismount Ocean Wyvern/mount Ocean Wyvern /s /s /n "
+
+The description of the Ocean Wyvern is "It has bright shimmering scales that reflect from the sunlight. The ocean they live in is very deep and dark, which makes their face darker when on the surface."
+Understand "Wyvern" or "Seawing" as Ocean Wyvern.
+
+The Docks is northwest of Waterway Town. "The water from the ocean below has lots of sea otters that love to play around the paths to here! There are staircases that lead underwater..."
+
+The Underwater Vortex is east of the Docks. "This vortex transport takes people and seawings of the town to a magical land far away. Legend says that when a vortex is opened, do not go through until it's finished opening or you will get stuck there forever!"
+
+
